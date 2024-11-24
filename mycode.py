@@ -9,6 +9,10 @@ data = {
 
 df = pd.DataFrame(data)
 
+# adding new row in data for V2
+new_row = {'Name': 'Muneeb', 'Age': 25, 'Designation': 'Flutter Developer'}
+df.loc[len(df.index)] = new_row
+
 data_dir = "data"
 os.makedirs(data_dir, exist_ok=True)
 
